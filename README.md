@@ -3,11 +3,11 @@ It's minimal, it's awesome, I love it.
 
 ### Featuring
 
-[FFF as fuzzyfinder](https://github.com/dmtrKovalenko/fff.nvim)
-[Pastel as colorscheme](https://github.com/ankushbhagats/pastel.nvim)
+[FFF](https://github.com/dmtrKovalenko/fff.nvim) as fuzzy finder<br>
+[Pastel ](https://github.com/ankushbhagats/pastel.nvim)as colorscheme
 
-Mason for LSP
-[Mason](https://github.com/mason-org/mason.nvim)
+Mason for LSP<br>
+[Mason](https://github.com/mason-org/mason.nvim)<br>
 [Mason LSP config](https://github.com/mason-org/mason-lspconfig.nvim)
 
 [LuaLine](https://github.com/nvim-lualine/lualine.nvim)
