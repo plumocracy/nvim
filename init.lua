@@ -152,6 +152,7 @@ require('quicker').setup {}
 require('gitsigns').setup {}
 require('pastel').setup {
 	style = {
+		-- This currently isn't making my bg transparent but I'm not pressed atm.
 		transparent = true
 	}
 }
