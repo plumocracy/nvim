@@ -3,19 +3,19 @@ It's minimal, it's awesome, I love it.
 
 ### Featuring
 
-(FFF as fuzzyfinder)[https://github.com/dmtrKovalenko/fff.nvim]
-(Pastel as colorscheme)[https://github.com/ankushbhagats/pastel.nvim]
+[FFF as fuzzyfinder](https://github.com/dmtrKovalenko/fff.nvim)
+[Pastel as colorscheme](https://github.com/ankushbhagats/pastel.nvim)
 
 Mason for LSP
-(Mason)[https://github.com/mason-org/mason.nvim]
-(Mason LSP config)[https://github.com/mason-org/mason-lspconfig.nvim]
+[Mason](https://github.com/mason-org/mason.nvim)
+[Mason LSP config](https://github.com/mason-org/mason-lspconfig.nvim)
 
-(LuaLine)[https://github.com/nvim-lualine/lualine.nvim]
+[LuaLine](https://github.com/nvim-lualine/lualine.nvim)
 
-(Mini.Nvim)[https://nvim-mini.org/mini.nvim/]
+[Mini.Nvim](https://nvim-mini.org/mini.nvim/)
 Snippets, Icons
 
-(cmp as Autocomplete)[https://github.com/hrsh7th/nvim-cmp]
+[cmp as Autocomplete](https://github.com/hrsh7th/nvim-cmp)
 
 
 ### Dependencies
