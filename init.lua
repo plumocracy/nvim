@@ -133,6 +133,7 @@ vim.pack.add({
 
 	-- Colors
 	"https://github.com/ankushbhagats/pastel.nvim",
+	"https://github.com/vague-theme/vague.nvim",
 
 	-- LSP
 	"https://github.com/neovim/nvim-lspconfig",
@@ -159,6 +160,9 @@ vim.pack.add({
 
 	-- splash screen
 	"https://github.com/goolord/alpha-nvim",
+
+	-- oil (buffer like file exploration)
+	"https://github.com/stevearc/oil.nvim",
 })
 
 -- SETUP PLUGINS --
@@ -191,6 +195,11 @@ require("pastel").setup({
 		transparent = "*",
 		inactive = false,
 	},
+	palette = "pastelpop",
+})
+
+require("vague").setup({
+	transparent = true,
 })
 
 require("nvim-treesitter").setup({})
@@ -221,6 +230,10 @@ require("glance").setup({
 })
 
 require("alpha").setup(require("alpha.themes.dashboard").config)
+
+require("oil").setup({
+	default_file_explorer = true,
+})
 
 -- Set the default formatter to conform.
 vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
@@ -300,7 +313,9 @@ vim.keymap.set("n", "<leader>sd", function()
 end, { desc = "Show Diagnostic" })
 
 -- Exit current buffer to netrw.
-vim.keymap.set("n", "<leader>ef", vim.cmd.Ex, { desc = "Return to file browser" })
+vim.keymap.set("n", "<leader>ef", function()
+	require("oil").open()
+end, { desc = "Return to file browser" })
 
 -- Use <Esc> to exit terminal mode
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
@@ -330,4 +345,4 @@ vim.keymap.set("n", "<leader>lr", "<CMD>Glance references<CR>")
 vim.keymap.set("n", "<leader>ly", "<CMD>Glance type_definitions<CR>")
 vim.keymap.set("n", "<leader>lm", "<CMD>Glance implementations<CR>")
 
-vim.cmd.colorscheme("pasteldark")
+vim.cmd.colorscheme("pastel")
